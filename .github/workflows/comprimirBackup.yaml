@@ -2,9 +2,9 @@ name: backupSubir
 on:
   push:
 jobs:
-backup_y_accion:
-  runs-on: ubuntu-latest
-  steps:
+  backupYsubir:
+    runs-on: ubuntu-latest
+    steps:
       - name: Checkout repo
         uses: actions/checkout@v5
 
