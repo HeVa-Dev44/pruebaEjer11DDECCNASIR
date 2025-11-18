@@ -1,0 +1,15 @@
+name: Hola a los cambios
+on:
+  push:
+    branches: [main]
+jobs:
+  hola:
+    runs-on: ubuntu-latest:
+    - name: Checkout repo
+      uses: actions/checkout@v5
+
+    - name: Dar permisos
+      uses: chmod +x src/hola.sh
+
+    - name: Ejecutar
+      run: ./src/hola.sh
