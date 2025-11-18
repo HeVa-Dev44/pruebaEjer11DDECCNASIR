@@ -1,3 +1,7 @@
+name: backupSubir
+on:
+  push:
+jobs:
 backup_y_accion:
   runs-on: ubuntu-latest
   steps:
